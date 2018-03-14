@@ -7,6 +7,11 @@
 /node_modules
 /ios/build
 /ios/pods
+/android/.gradle
+/android/app/build/
+/android/build
+
+.idea
 
 # misc
 .env.local
