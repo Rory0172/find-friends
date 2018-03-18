@@ -56,7 +56,7 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <FetchLocation onGetLocation={this.getUserLocationHandler} />
         <FetchCityLocation onGetCityLocation={this.getCityLocation} />
-        <UsersMap userLocation={this.state.userLocation} />
+        <UsersMap shopPlaces={data} userLocation={this.state.userLocation} />
         <TextInput
           style={styles.input}
           onChangeText={text => this.setState({ text })}
@@ -83,3 +83,18 @@ const styles = StyleSheet.create({
     zIndex: 999
   }
 });
+
+const data = [
+  {
+    id: 1,
+    name: 'de Bole',
+    latitude: 52.370216,
+    longitude: 4.915168
+  },
+  {
+    id: 2,
+    name: 'de Vliegende Hollander',
+    latitude: 52.380216,
+    longitude: 4.905168
+  }
+];

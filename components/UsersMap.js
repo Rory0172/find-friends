@@ -4,10 +4,19 @@ import MapView from 'react-native-maps';
 
 const userMap = props => {
   let userLocationMarker = null;
+  let shopLocations = [];
 
   if (props.userLocation) {
     userLocationMarker = <MapView.Marker coordinate={props.userLocation} />;
   }
+
+  if (props.shopPlaces) {
+    shopLocations = props.shopPlaces.map(data => (
+      <MapView.Marker coordinate={data} key={data.key} title={data.name} />
+    ));
+    console.log(shopLocations);
+  }
+
   return (
     <View style={styles.mapContainer}>
       <MapView
@@ -21,6 +30,7 @@ const userMap = props => {
         style={styles.map}
       >
         {userLocationMarker}
+        {shopLocations}
       </MapView>
     </View>
   );
