@@ -1,9 +1,9 @@
 import React from 'react';
 import { Text, View, TextInput, Button } from 'react-native';
 
-import FetchLocation from './components/FetchLocation';
-import FetchCityLocation from './components/FetchCityLocation';
-import UsersMap from './components/UsersMap';
+import FetchLocation from '../components/FetchLocation';
+import FetchCityLocation from '../components/FetchCityLocation';
+import UsersMap from '../components/UsersMap';
 import { Container, SearchBar } from '../styles/';
 
 export default class App extends React.Component {

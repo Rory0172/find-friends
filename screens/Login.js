@@ -2,14 +2,13 @@ import React from 'react';
 import { Text, Button } from 'react-native';
 import { Container, TextInput } from '../styles';
 
-export default function Login(props) {
-  console.log(props);
+export default function Login({ navigation }) {
   return (
     <Container>
       <Text>Login screen</Text>
       <TextInput placeholder={'E-mailadres'} />
       <TextInput placeholder={'Wachtwoord'} secureTextEntry />
-      <Button title={'Inloggen'} />
+      <Button title={'Inloggen'} onPress={() => navigation.navigate('Maps')} />
     </Container>
   );
 }
