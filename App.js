@@ -1,9 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
+import { Text, View, TextInput, Button } from 'react-native';
 
 import FetchLocation from './components/FetchLocation';
 import FetchCityLocation from './components/FetchCityLocation';
 import UsersMap from './components/UsersMap';
+import { Container } from './styles/grid';
+import { SearchBar } from './styles/searchBar';
 
 export default class App extends React.Component {
   state = {
@@ -53,41 +55,23 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <Container>
         <FetchLocation onGetLocation={this.getUserLocationHandler} />
         <FetchCityLocation onGetCityLocation={this.getCityLocation} />
         <UsersMap shopPlaces={data} userLocation={this.state.userLocation} />
-        <TextInput
-          style={styles.input}
+        <SearchBar
           onChangeText={text => this.setState({ text })}
           value={this.state.text}
         />
-      </View>
+      </Container>
     );
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
-  },
-  input: {
-    height: 40,
-    width: '100%',
-    backgroundColor: 'white',
-    position: 'absolute',
-    top: 20,
-    zIndex: 999
-  }
-});
-
 const data = [
   {
     id: 1,
-    name: 'de Bole',
+    name: "t' zoldertje!",
     latitude: 52.370216,
     longitude: 4.915168
   },
