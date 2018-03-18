@@ -4,8 +4,7 @@ import { Text, View, TextInput, Button } from 'react-native';
 import FetchLocation from './components/FetchLocation';
 import FetchCityLocation from './components/FetchCityLocation';
 import UsersMap from './components/UsersMap';
-import { Container } from './styles/grid';
-import { SearchBar } from './styles/searchBar';
+import { Container, SearchBar } from '../styles/';
 
 export default class App extends React.Component {
   state = {
