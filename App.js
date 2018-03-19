@@ -1,21 +1,8 @@
-import React from 'react';
+import React from "react";
+import { SignedOut } from "./router";
 
-import { StackNavigator } from 'react-navigation';
-
-import Login from './screens/Login';
-import Maps from './screens/Maps';
-
-export default StackNavigator({
-  Login: {
-    screen: Login,
-    navigationOptions: {
-      title: 'Login'
-    }
-  },
-  Maps: {
-    screen: Maps,
-    navigationOptions: {
-      title: 'Maps'
-    }
+export default class App extends React.Component {
+  render() {
+    return <SignedOut />;
   }
-});
+}
