@@ -1,13 +1,23 @@
 import React from 'react';
 
-import { SwitchNavigator, TabNavigator, TabBarBottom } from 'react-navigation';
-import { FontAwesome } from "react-native-vector-icons";
+import {
+  StackNavigator,
+  SwitchNavigator,
+  TabNavigator,
+  TabBarBottom
+} from 'react-navigation';
+import { FontAwesome } from 'react-native-vector-icons';
 
 import SignUp from './screens/SignUp';
 import SignIn from './screens/SignIn';
 
 import Maps from './screens/Maps';
 import Shops from './screens/Shops';
+import Shop from './screens/Shop';
+
+import stackNav from './stackNav';
+
+import { provincies } from './screens/Shops';
 
 export const SignedOut = SwitchNavigator({
   SignUp: {
@@ -26,8 +36,8 @@ export const SignedIn = TabNavigator(
         tabBarLabel: 'Map'
       }
     },
-    Shops: {
-      screen: Shops,
+    shopsTab: {
+      screen: stackNav,
       navigationOptions: {
         tabBarLabel: 'Shops'
       }
