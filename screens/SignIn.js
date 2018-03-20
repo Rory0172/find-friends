@@ -3,7 +3,6 @@ import { Text, Button } from 'react-native';
 import { Container, TextInput } from '../styles';
 
 export default function SignIn({ navigation }) {
-  console.log(navigation);
   return (
     <Container>
       <Text>SignIn screen</Text>
