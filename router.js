@@ -13,7 +13,6 @@ import SignIn from './screens/SignIn';
 
 import Maps from './screens/Maps';
 import Shops from './screens/Shops';
-import Shop from './screens/Shop';
 
 import stackNav from './stackNav';
 

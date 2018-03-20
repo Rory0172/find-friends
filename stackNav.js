@@ -3,14 +3,14 @@ import { TouchableOpacity } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 import Shops from './screens/Shops';
-import Shop from './screens/Shop';
+import Provinces from './screens/Provinces';
 
 const stackNav = StackNavigator({
     Shops: {
         screen: Shops
     },
-    Shop: {
-        screen: Shop
+    Provinces: {
+        screen: Provinces
     }
 });
 

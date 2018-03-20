@@ -1,7 +1,7 @@
 export const provincies = [
   {
     id: 1,
-    name: "Zuid-Holland"
+    name: 'Zuid-Holland'
   },
   {
     id: 2,
@@ -9,7 +9,7 @@ export const provincies = [
   },
   {
     id: 3,
-    name: "Noord-Brabant"
+    name: 'Noord-Brabant'
   },
   {
     id: 4,
@@ -17,15 +17,15 @@ export const provincies = [
   },
   {
     id: 5,
-    name: "Utrecht"
+    name: 'Utrecht'
   },
   {
     id: 6,
     name: 'Overijssel'
-  }
-  ,{
+  },
+  {
     id: 7,
-    name: "Limburg"
+    name: 'Limburg'
   },
   {
     id: 8,
@@ -33,7 +33,7 @@ export const provincies = [
   },
   {
     id: 9,
-    name: "Groningen"
+    name: 'Groningen'
   },
   {
     id: 10,
@@ -41,10 +41,29 @@ export const provincies = [
   },
   {
     id: 11,
-    name: "Flevoland"
+    name: 'Flevoland'
   },
   {
     id: 12,
     name: 'Zeeland'
+  }
+];
+
+export const shops = [
+  {
+    name: 'De vliegende Hollander',
+    stars: 5
+  },
+  {
+    name: 'The Happy',
+    stars: 4.5
+  },
+  {
+    name: 'De Zolder',
+    stars: 4.5
+  },
+  {
+    name: 'De Medley',
+    stars: 2
   }
 ];

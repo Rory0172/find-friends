@@ -25,7 +25,7 @@ export default function Shops({navigation}) {
         renderItem={({ item, separators }) => (
           <TouchableHighlight
             onPress={() =>
-              navigation.navigate('Shop', { shop: item })}
+              navigation.navigate('Provinces', { province: item })}
             onShowUnderlay={separators.highlight}
             onHideUnderlay={separators.unhighlight}
           >

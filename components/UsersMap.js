@@ -19,7 +19,6 @@ const userMap = props => {
         onPress={() => console.log(data.name)}
       />
     ));
-    console.log(shopLocations);
   }
 
   return (
