@@ -13,8 +13,8 @@ const userMap = props => {
   if (props.shopPlaces) {
     shopLocations = props.shopPlaces.map(data => (
       <MapView.Marker
+        key={data.id}
         coordinate={data}
-        key={data.key}
         title={data.name}
         onPress={() => console.log(data.name)}
       />

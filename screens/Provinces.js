@@ -30,7 +30,7 @@ class Provinces extends React.Component {
           data={shops}
           renderItem={({ item, separators }) => (
             <TouchableHighlight
-              onPress={() => navigation.navigate('Shop', { shop: item })}
+              onPress={() => this.props.navigation.navigate('Shop', { shop: item })}
               onShowUnderlay={separators.highlight}
               onHideUnderlay={separators.unhighlight}
             >
@@ -41,6 +41,7 @@ class Provinces extends React.Component {
                   startingValue={item.stars}
                   imageSize={20}
                   style={{ paddingVertical: 10 }}
+                  readonly
                 />
               </View>
             </TouchableHighlight>
